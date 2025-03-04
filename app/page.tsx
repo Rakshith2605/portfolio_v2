@@ -225,7 +225,7 @@ export default function Home() {
                   asChild
                   className="rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Rakshith2605" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                     <span className="sr-only">GitHub</span>
                   </a>
