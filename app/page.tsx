@@ -63,8 +63,8 @@ export default function Home() {
   const stats = [
     { label: "Years Experience", value: "5+" },
     { label: "Projects Completed", value: "20+" },
-    { label: "Data Processed", value: "2.5M+" },
-    { label: "Happy Clients", value: "15+" },
+    { label: "Data Processed", value: "1.5M+" },
+    { label: "Happy Clients", value: "10+" },
   ]
 
   return (
