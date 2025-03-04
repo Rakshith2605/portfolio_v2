@@ -14,7 +14,7 @@ export default function SkillsSection() {
     {
       title: "Data Engineering & Big Data",
       icon: <Database className="h-6 w-6 text-primary" />,
-      skills: ["Apache Spark", "Apache Kafka", "Hive", "ETL Pipelines"],
+      skills: ["Apache Spark", "Apache Kafka", "Hive"],
     },
     {
       title: "Databases & Data Warehousing",
@@ -44,7 +44,7 @@ export default function SkillsSection() {
     {
       title: "Machine Learning & AI",
       icon: <Bot className="h-6 w-6 text-primary" />,
-      skills: ["TensorFlow", "RAG", "LLM Fine-tuning", "Prompt Engineering", "Neural Networks"],
+      skills: ["TensorFlow", "RAG", "LLM Fine-tuning", "MLops", "Agentic AI modeling", "Prompt Engineering", "Deep Learning & Neural Networks"],
     },
   ]
 
