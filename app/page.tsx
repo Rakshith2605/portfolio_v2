@@ -695,7 +695,7 @@ export default function Home() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild className="hover:text-primary transition-colors">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Rakshith2605" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>
