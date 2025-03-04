@@ -457,8 +457,8 @@ export default function Home() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <EducationCard
-              degree="Master's, MS in Data Analytics Engineering"
-              institution="Northeastern University"
+              degree="MS in Data Analytics Engineering"
+              institution="Northeastern University, Boston"
               period="September 2023 - May 2025"
               gpa="3.7"
               courses={[
@@ -472,8 +472,8 @@ export default function Home() {
             />
 
             <EducationCard
-              degree="Bachelor's, Electrical Engineering"
-              institution="REVA University"
+              degree="B'Tec in Electrical and Electronics Engineering"
+              institution="REVA University, Bengaluru"
               period="August 2018 - May 2022"
               gpa="3.69"
               courses={[
