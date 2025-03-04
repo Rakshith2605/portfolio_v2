@@ -329,10 +329,7 @@ export default function Home() {
               location="Boston, MA, USA"
               period="February 2024 - Present"
               responsibilities={[
-                "Developed a RAG-driven chatbot that addressed HPC user inquiries, leading to a 40% decrease in troubleshooting tickets",
-                "Containerized intricate research applications with Docker, simplifying deployment and expediting scientific workflows",
-                "Enhanced HPC reliability by examining 2.5M SLURM jobs using PySpark, leading to a 20% decrease in job failures",
-                "Automated SLURM account administration through shell scripting, decreasing task resolution duration by 70%",
+                "I landed an absolute gem of an opportunity with Northeastern University’s Research Computing team—a crew of downright tech sorcerers! We were the masterminds behind the HPC cluster and cloud storage, basically running an in-house AWS for NU. Picture this: a high-octane squad keeping the university’s research engine roaring with cutting-edge computing power. My mission? Crafting custom containers and software from scratch—building the tools that made science happen. But that’s not all—I was the go-to troubleshooter, swooping in to solve the wildest tech puzzles for scientists and researchers. Working alongside brilliant minds every day? It was like living in a sci-fi blockbuster, and I loved every second of it!"
               ]}
             />
 
@@ -342,9 +339,7 @@ export default function Home() {
               location="Hyderabad, Telangana, India"
               period="May 2023 - August 2023"
               responsibilities={[
-                "Created feature engineering ETL pipelines for the client's operational data and uploaded it to Azure Blob storage",
-                "Implemented Docker containers and managed them with Azure Kubernetes Service (AKS), reducing deployment time by 50%",
-                "Automated CI/CD testing utilizing GitHub Actions enhances code quality and decreases deployment errors by 35%",
+                "Then came the plot twist! My team couldn’t get enough of my hustle and passion, and within just one year—a rare feat in our org—they handed me the keys to the Senior Software Engineer kingdom. I leveled up to tackle data integration and migration, weaving together systems like a tech wizard. I kept a sharp eye on DevOps, making sure the pipeline hummed, while jumping in to squash bugs flagged by the testing crew. Debugging? Data flows? DevOps monitoring? I was the Swiss Army knife they didn’t know they needed!"
               ]}
             />
 
@@ -354,9 +349,7 @@ export default function Home() {
               location="Hyderabad, TG, India"
               period="February 2022 - April 2023"
               responsibilities={[
-                "Employed automated testing frameworks like Selenium, TestNG to verify application performance across different platforms",
-                "Incorporated test automation frameworks into CI/CD pipelines for smooth deployment in cloud settings",
-                "Examined unsuccessful test cases by troubleshooting code and working with developers to fix problems",
+                "I kicked off my career with an electrifying team of engineers who set the stage for something epic. As an SDET, I dove headfirst into automation testing, crafting a rock-solid test framework for an ERP system that could handle anything we threw at it. I owned the testing game and nailed pre-prod stage deployments like a pro—think of me as the gatekeeper ensuring everything ran smoothly before the spotlight hit."
               ]}
             />
 
@@ -366,10 +359,7 @@ export default function Home() {
               location="Bengaluru, KA, India"
               period="May 2018 - April 2023"
               responsibilities={[
-                "Managed data processing, labeling, and transcription projects for major clients, including Apple, M-Benz, and Google",
-                "Oversaw the training of Siri's regional language models and enhanced Google Maps location search functionality",
-                "Led pre-processing for voice recognition ML models, boosting model accuracy by 18%",
-                "Demonstrated expertise in the management of stakeholders, projects, and teams",
+                "What started as a humble college side hustle for some extra pocket money quickly snowballed into something extraordinary.Fueled by an obsession with top-notch quality, this small gig caught the eye of industry titans. Before long, we were rubbing shoulders with the likes of Google, Mercedes-Benz, Apple, and TellUS Appen—pretty wild for a crew of campus dreamers! We dove headfirst into some seriously cool projects: teaching Siri and Google Assistant to master Indic languages, turbocharging Google Maps search to pinpoint accuracy, fine-tuning audio-to-text models that hear every whisper, and even sharpening the ADAS systems powering Benz’s cutting-edge rides. From tinkering for fun to shaping the tech that runs the world, it’s been one heck of a ride"
               ]}
             />
           </div>
