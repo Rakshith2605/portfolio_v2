@@ -604,8 +604,6 @@ export default function Home() {
                   </div>
                 </CardContent>
               </Card>
-            </motion.div>
-
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -614,7 +612,7 @@ export default function Home() {
             >
               <Card className="border-none shadow-lg">
                 <CardContent className="p-6">
-                  <form className="space-y-4">
+                  <form action="https://formspree.io/f/mqaerrar" method="POST" className="space-y-4">
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium text-foreground">
@@ -622,8 +620,10 @@ export default function Home() {
                         </label>
                         <input
                           id="name"
+                          name="name"
                           className="w-full p-2 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary/50 transition-all text-foreground"
                           placeholder="Your Name"
+                          required
                         />
                       </div>
                       <div className="space-y-2">
@@ -632,9 +632,11 @@ export default function Home() {
                         </label>
                         <input
                           id="email"
+                          name="email"
                           type="email"
                           className="w-full p-2 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary/50 transition-all text-foreground"
                           placeholder="your.email@example.com"
+                          required
                         />
                       </div>
                     </div>
@@ -644,8 +646,10 @@ export default function Home() {
                       </label>
                       <input
                         id="subject"
+                        name="subject"
                         className="w-full p-2 rounded-md border border-input bg-background focus:ring-2 focus:ring-primary/50 transition-all text-foreground"
                         placeholder="Subject"
+                        required
                       />
                     </div>
                     <div className="space-y-2">
@@ -654,9 +658,11 @@ export default function Home() {
                       </label>
                       <textarea
                         id="message"
+                        name="message"
                         rows={4}
                         className="w-full p-2 rounded-md border border-input bg-background resize-none focus:ring-2 focus:ring-primary/50 transition-all text-foreground"
                         placeholder="Your message here..."
+                        required
                       />
                     </div>
                     <Button type="submit" className="w-full group">
