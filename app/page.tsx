@@ -138,10 +138,11 @@ export default function Home() {
                 </Link>
               </Button>
               <Button variant="outline" asChild className="group text-foreground">
-                <a href="https://drive.google.com/file/d/1zAeJ6SL7ENrCHVynYZrB5bM4Bi4_iTEs/view?usp=sharing" download>
+                <a href="https://drive.google.com/file/d/1zAeJ6SL7ENrCHVynYZrB5bM4Bi4_iTEs/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>
                   <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1" /> Resume
                 </a>
               </Button>
+
             </div>
           </motion.div>
           <motion.div
