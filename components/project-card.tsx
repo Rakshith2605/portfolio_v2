@@ -11,9 +11,10 @@ interface ProjectCardProps {
   description: string
   tags: string[]
   image: string
+  projectUrl: string
 }
 
-export default function ProjectCard({ title, date, description, tags, image }: ProjectCardProps) {
+export default function ProjectCard({ title, date, description, tags, image, projectUrl }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -25,13 +26,13 @@ export default function ProjectCard({ title, date, description, tags, image }: P
       <Card className="overflow-hidden transition-all hover:shadow-lg border-none dark:bg-gray-800">
         <div className="aspect-video relative group">
           <img
-            src={image.startsWith("/placeholder") ? "/images/project-default.jpg" : image}
+            src={image || "/images/project-default.jpg"}
             alt={title}
             className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
             <div className="p-4 w-full">
-              <a href="#" className="text-white flex items-center gap-1 w-fit ml-auto">
+              <a href={projectUrl} target="_blank" rel="noopener noreferrer" className="text-white flex items-center gap-1 w-fit ml-auto">
                 <span className="text-sm font-medium">View Project</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
@@ -56,4 +57,3 @@ export default function ProjectCard({ title, date, description, tags, image }: P
     </motion.div>
   )
 }
-
