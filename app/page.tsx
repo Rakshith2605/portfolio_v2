@@ -389,46 +389,52 @@ export default function Home() {
               description="Developed Streamlit app with custom agentic AI for intuitive data analysis and visualization. Deployed OpenAI GPT-driven agents for classifying queries, manipulating data, and generating visualizations."
               tags={["GenAI", "OpenAI", "Streamlit", "Python", "Plotly"]}
               image="/images/project1.png"
+              projectUrl="https://example.com/genbi-project"
             />
-
+        
             <ProjectCard
               title="RAG Chat Bot for Research Computing Documentation"
               date="August 2024 - October 2024"
               description="Developed a conversational AI chatbot leveraging Retrieval-Augmented Generation (RAG) for accessing research documents. Combined Azure, Airflow, and MLflow for data collection, automated pipeline operations, and model version control."
               tags={["RAG", "Azure", "Airflow", "MLflow", "NLP"]}
               image="/images/project2.jpg"
+              projectUrl="https://example.com/rag-chatbot"
             />
-
+        
             <ProjectCard
               title="Reddit Data Engineering Pipeline"
               date="January 2025 - January 2025"
               description="Architected scalable data pipeline processing 5M+ daily Reddit posts using Apache Kafka. Engineered real-time sentiment analysis system with Spark Streaming. Optimized data storage and retrieval using distributed systems."
               tags={["Kafka", "Spark", "Python", "Sentiment Analysis", "Big Data"]}
               image="/images/project3.jpg"
+              projectUrl="https://example.com/reddit-pipeline"
             />
-
+        
             <ProjectCard
               title="Real-time Financial Market Analytics Pipeline"
               date="November 2024 - November 2024"
               description="Developed a streaming pipeline utilizing Apache Kafka and Spark to handle over 1 million financial transactions daily. Developed a robust data ingestion system utilizing the Finnhub API, achieving a 40% decrease in latency."
               tags={["Kafka", "Spark", "PowerBI", "Financial Data", "API Integration"]}
               image="/images/project4.jpg"
+              projectUrl="https://example.com/financial-analytics"
             />
-
+        
             <ProjectCard
               title="CNN based Road Sign Recognition"
               date="January 2024 - January 2024"
               description="Developed a CNN-based AI system for accurate road sign recognition using Python and TensorFlow. Employed data augmentation techniques to improve model generalization and simulate real-world conditions."
               tags={["CNN", "TensorFlow", "Computer Vision", "Transfer Learning"]}
               image="/images/project5.jpg"
+              projectUrl="https://example.com/road-sign-recognition"
             />
-
+        
             <ProjectCard
               title="Weather Pattern Analysis System"
               date="December 2025 - December 2025"
               description="Spearheaded development of predictive analytics pipeline using Azure ML and Databricks. Transformed raw NOAA climate data into actionable insights using advanced ETL processes. Implemented machine learning models achieving 90% forecast accuracy."
               tags={["Azure ML", "Databricks", "ETL", "Power BI", "Predictive Analytics"]}
               image="/images/project6.jpg"
+              projectUrl="https://example.com/weather-analysis"
             />
           </div>
           <div className="mt-8 text-center">
