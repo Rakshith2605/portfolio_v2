@@ -389,7 +389,7 @@ export default function Home() {
               description="Developed Streamlit app with custom agentic AI for intuitive data analysis and visualization. Deployed OpenAI GPT-driven agents for classifying queries, manipulating data, and generating visualizations."
               tags={["GenAI", "OpenAI", "Streamlit", "Python", "Plotly"]}
               image="/images/project1.png"
-              projectUrl="https://example.com/genbi-project"
+              projectUrl="https://genbiv2-ek9oymz9ryloykrm2zqree.streamlit.app/"
             />
         
             <ProjectCard
