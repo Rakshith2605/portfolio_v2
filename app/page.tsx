@@ -15,6 +15,7 @@ import StatCard from "@/components/stat-card"
 import TypewriterEffect from "@/components/typewriter-effect"
 import { AnimatePresence, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
+import Image from 'next/image'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -384,13 +385,14 @@ export default function Home() {
           </motion.div>
           <div className="grid md:grid-cols-2 gap-6">
             <ProjectCard
-              title="GenBI- Agentic AI for Business Intelligence"
-              date="February 2025 - March 2025"
-              description="Developed Streamlit app with custom agentic AI for intuitive data analysis and visualization. Deployed OpenAI GPT-driven agents for classifying queries, manipulating data, and generating visualizations."
-              tags={["GenAI", "OpenAI", "Streamlit", "Python", "Plotly"]}
-              image="images/project1.jpeg"
-              projectUrl="https://genbiv2-ek9oymz9ryloykrm2zqree.streamlit.app/"
-            />
+            title="GenBI- Agentic AI for Business Intelligence"
+            date="February 2025 - March 2025"
+            description="Developed Streamlit app with custom agentic AI for intuitive data analysis and visualization. Deployed OpenAI GPT-driven agents for classifying queries, manipulating data, and generating visualizations."
+            tags={["GenAI", "OpenAI", "Streamlit", "Python", "Plotly"]}
+            image="/images/project1.jpeg"
+            projectUrl="https://genbiv2-ek9oymz9ryloykrm2zqree.streamlit.app/"
+          />
+
         
             <ProjectCard
               title="RAG Chat Bot for Research Computing Documentation"
