@@ -426,7 +426,7 @@ export default function Home() {
               date="January 2024 - January 2024"
               description="Developed a CNN-based AI system for accurate road sign recognition using Python and TensorFlow. Employed data augmentation techniques to improve model generalization and simulate real-world conditions."
               tags={["CNN", "TensorFlow", "Computer Vision", "Transfer Learning"]}
-              image="/images/git.webp"
+              image="/images/trafficsign.jpeg"
               projectUrl="https://github.com/Rakshith2605/CNN-based-Road-Sign-Recognition.git"
             />
         
@@ -435,7 +435,7 @@ export default function Home() {
               date="December 2025 - December 2025"
               description="This project aims to develop a robust weather forecasting model using Long Short-Term Memory (LSTM) neural networks. These neural networks can process sequential data and excel in capturing long-term dependencies, making them particularly suitable for weather forecasting tasks. The model uses historical weather data from NOAA’s National Centers for Environmental Information (NCEI) to predict critical weather parameters such as temperature, dew point, and wind speed. The project includes data preprocessing, model building, and optimization through hyperparameter tuning and performance evaluation using Mean Squared Error (MSE) and Mean Absolute Error (MAE). This study sheds light on the potential of Deep Learning techniques in weather forecasting, offering a useful tool for making accurate weather predictions and ultimately driving data-driven decision - making across industries."
               tags={["Azure ML", "Databricks", "ETL", "Power BI", "Predictive Analytics"]}
-              image="/images/git.webp"
+              image="/images/weather.jpg"
               projectUrl="https://example.com/weather-analysis"
             />
           </div>
