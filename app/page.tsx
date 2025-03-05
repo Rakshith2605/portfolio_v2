@@ -408,7 +408,7 @@ export default function Home() {
               date="January 2025 - January 2025"
               description="Resume Analyzer is an interactive Streamlit application designed to help job seekers analyze their resumes and find relevant job opportunities on LinkedIn. By uploading a PDF resume, the app extracts key information, identifies relevant keywords, and uses them to search for job postings based on experience level and posting date. The results are presented in a visually appealing, interactive table with clickable links to job postings."
               tags={["GenAi", "Data extraction", "Feature extraction", "NLP", "Streamlit", "Python"]}
-              image="/images/project3.jpg"
+              image="/images/RA.png"
               projectUrl="https://resumeanalyserai-5macukroinbruyjur8nexx.streamlit.app/"
             />
         
@@ -417,7 +417,7 @@ export default function Home() {
               date="November 2024 - November 2024"
               description="Detect license plates from video streams or images, Segment individual characters from the detected plate. Recognize the characters using a trained SVM model, Output the complete license plate number"
               tags={["OpenCV", "Deep Learning", "Pytorch", "Scikit Learn"]}
-              image="/images/project4.jpg"
+              image="/images/numberplate.jpg"
               projectUrl="https://github.com/Rakshith2605/Real-TimePlateNumberDetection"
             />
         
@@ -426,7 +426,7 @@ export default function Home() {
               date="January 2024 - January 2024"
               description="Developed a CNN-based AI system for accurate road sign recognition using Python and TensorFlow. Employed data augmentation techniques to improve model generalization and simulate real-world conditions."
               tags={["CNN", "TensorFlow", "Computer Vision", "Transfer Learning"]}
-              image="/images/project5.jpg"
+              image="/images/git.webp"
               projectUrl="https://github.com/Rakshith2605/CNN-based-Road-Sign-Recognition.git"
             />
         
@@ -435,7 +435,7 @@ export default function Home() {
               date="December 2025 - December 2025"
               description="This project aims to develop a robust weather forecasting model using Long Short-Term Memory (LSTM) neural networks. These neural networks can process sequential data and excel in capturing long-term dependencies, making them particularly suitable for weather forecasting tasks. The model uses historical weather data from NOAA’s National Centers for Environmental Information (NCEI) to predict critical weather parameters such as temperature, dew point, and wind speed. The project includes data preprocessing, model building, and optimization through hyperparameter tuning and performance evaluation using Mean Squared Error (MSE) and Mean Absolute Error (MAE). This study sheds light on the potential of Deep Learning techniques in weather forecasting, offering a useful tool for making accurate weather predictions and ultimately driving data-driven decision - making across industries."
               tags={["Azure ML", "Databricks", "ETL", "Power BI", "Predictive Analytics"]}
-              image="/images/project6.jpg"
+              image="/images/git.webp"
               projectUrl="https://example.com/weather-analysis"
             />
           </div>
