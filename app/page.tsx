@@ -399,8 +399,8 @@ export default function Home() {
               date="August 2024 - October 2024"
               description="Developed a conversational AI chatbot leveraging Retrieval-Augmented Generation (RAG) for accessing research documents. Combined Azure, Airflow, and MLflow for data collection, automated pipeline operations, and model version control."
               tags={["RAG", "Azure", "Airflow", "MLflow", "NLP"]}
-              image="/images/project2.jpg"
-              projectUrl="https://example.com/rag-chatbot"
+              image="/images/project2.png"
+              projectUrl="https://github.com/Santosh2904/AskRC.git"
             />
         
             <ProjectCard
