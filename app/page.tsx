@@ -388,7 +388,7 @@ export default function Home() {
               date="February 2025 - March 2025"
               description="Developed Streamlit app with custom agentic AI for intuitive data analysis and visualization. Deployed OpenAI GPT-driven agents for classifying queries, manipulating data, and generating visualizations."
               tags={["GenAI", "OpenAI", "Streamlit", "Python", "Plotly"]}
-              image="/images/project1.png"
+              image="images/project1.jpg"
               projectUrl="https://genbiv2-ek9oymz9ryloykrm2zqree.streamlit.app/"
             />
         
