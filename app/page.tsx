@@ -607,7 +607,7 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors text-foreground"
                       >
-                        github.com/rakshithd26
+                        github.com/rakshith2605
                       </a>
                     </div>
                   </div>
