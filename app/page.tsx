@@ -602,7 +602,7 @@ export default function Home() {
                         <Github className="h-5 w-5 text-primary" />
                       </div>
                       <a
-                        href="https://github.com/rakshithd26"
+                        href="https://github.com/Rakshith2605"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors text-foreground"
