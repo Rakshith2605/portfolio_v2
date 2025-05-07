@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useState, useEffect } from "react"
@@ -16,6 +15,7 @@ import TypewriterEffect from "@/components/typewriter-effect"
 import { AnimatePresence, motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import Image from 'next/image'
+import ProductsSection from "@/components/products-section"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -35,7 +35,7 @@ export default function Home() {
       setShowScrollTop(window.scrollY > 500)
 
       // Update active section based on scroll position
-      const sections = ["home", "about", "skills", "experience", "projects", "education", "contact"]
+      const sections = ["home", "about", "skills", "products", "experience", "projects", "education", "contact"]
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -78,7 +78,7 @@ export default function Home() {
             <span className="text-primary">R</span>akshith <span className="text-primary">D</span>harmappa
           </div>
           <nav className="hidden md:flex gap-6">
-            {["about", "skills", "experience", "projects", "education", "contact"].map((section) => (
+            {["about", "skills", "products", "experience", "projects", "education", "contact"].map((section) => (
               <Link
                 key={section}
                 href={`#${section}`}
@@ -310,8 +310,8 @@ export default function Home() {
           <SkillsSection />
         </section>
 
-        {/* Experience Section */}
-        <section id="experience" className="py-12 scroll-mt-20">
+        {/* Products Section */}
+        <section id="products" className="py-12 scroll-mt-20">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -322,6 +322,24 @@ export default function Home() {
               <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
                 03
               </span>
+              Products
+            </h2>
+          </motion.div>
+          <ProductsSection />
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience" className="py-12 scroll-mt-20">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
+              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
+                04
+              </span>
               Professional Experience
             </h2>
           </motion.div>
@@ -330,9 +348,9 @@ export default function Home() {
               title="Graduate Research Assistant"
               company="Northeastern University"
               location="Boston, MA, USA"
-              period="February 2024 - Present"
+              period="February 2024 - April 2025"
               responsibilities={[
-                "I landed an absolute gem of an opportunity with Northeastern University’s Research Computing team—a crew of downright tech sorcerers! We were the masterminds behind the HPC cluster and cloud storage, basically running an in-house AWS for NU. Picture this: a high-octane squad keeping the university’s research engine roaring with cutting-edge computing power. My mission? Crafting custom containers and software from scratch—building the tools that made science happen. But that’s not all—I was the go-to troubleshooter, swooping in to solve the wildest tech puzzles for scientists and researchers. Working alongside brilliant minds every day? It was like living in a sci-fi blockbuster, and I loved every second of it!"
+                "I landed an absolute gem of an opportunity with Northeastern University's Research Computing team—a crew of downright tech sorcerers! We were the masterminds behind the HPC cluster and cloud storage, basically running an in-house AWS for NU. Picture this: a high-octane squad keeping the university's research engine roaring with cutting-edge computing power. My mission? Crafting custom containers and software from scratch—building the tools that made science happen. But that's not all—I was the go-to troubleshooter, swooping in to solve the wildest tech puzzles for scientists and researchers. Working alongside brilliant minds every day? It was like living in a sci-fi blockbuster, and I loved every second of it!"
               ]}
             />
 
@@ -342,7 +360,7 @@ export default function Home() {
               location="Hyderabad, Telangana, India"
               period="May 2023 - August 2023"
               responsibilities={[
-                "Then came the plot twist! My team couldn’t get enough of my hustle and passion, and within just one year—a rare feat in our org—they handed me the keys to the Senior Software Engineer kingdom. I leveled up to tackle data integration and migration, weaving together systems like a tech wizard. I kept a sharp eye on DevOps, making sure the pipeline hummed, while jumping in to squash bugs flagged by the testing crew. Debugging? Data flows? DevOps monitoring? I was the Swiss Army knife they didn’t know they needed!"
+                "Then came the plot twist! My team couldn't get enough of my hustle and passion, and within just one year—a rare feat in our org—they handed me the keys to the Senior Software Engineer kingdom. I leveled up to tackle data integration and migration, weaving together systems like a tech wizard. I kept a sharp eye on DevOps, making sure the pipeline hummed, while jumping in to squash bugs flagged by the testing crew. Debugging? Data flows? DevOps monitoring? I was the Swiss Army knife they didn't know they needed!"
               ]}
             />
 
@@ -362,7 +380,7 @@ export default function Home() {
               location="Bengaluru, KA, India"
               period="May 2018 - April 2023"
               responsibilities={[
-                "What started as a humble college side hustle for some extra pocket money quickly snowballed into something extraordinary.Fueled by an obsession with top-notch quality, this small gig caught the eye of industry titans. Before long, we were rubbing shoulders with the likes of Google, Mercedes-Benz, Apple, and TellUS Appen—pretty wild for a crew of campus dreamers! We dove headfirst into some seriously cool projects: teaching Siri and Google Assistant to master Indic languages, turbocharging Google Maps search to pinpoint accuracy, fine-tuning audio-to-text models that hear every whisper, and even sharpening the ADAS systems powering Benz’s cutting-edge rides. From tinkering for fun to shaping the tech that runs the world, it’s been one heck of a ride"
+                "What started as a humble college side hustle for some extra pocket money quickly snowballed into something extraordinary.Fueled by an obsession with top-notch quality, this small gig caught the eye of industry titans. Before long, we were rubbing shoulders with the likes of Google, Mercedes-Benz, Apple, and TellUS Appen—pretty wild for a crew of campus dreamers! We dove headfirst into some seriously cool projects: teaching Siri and Google Assistant to master Indic languages, turbocharging Google Maps search to pinpoint accuracy, fine-tuning audio-to-text models that hear every whisper, and even sharpening the ADAS systems powering Benz's cutting-edge rides. From tinkering for fun to shaping the tech that runs the world, it's been one heck of a ride"
               ]}
             />
           </div>
@@ -378,7 +396,7 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
               <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                04
+                05
               </span>
               Featured Projects
             </h2>
@@ -433,7 +451,7 @@ export default function Home() {
             <ProjectCard
               title="Weather Forecasting Model Using LSTMs"
               date="December 2025 - December 2025"
-              description="This project aims to develop a robust weather forecasting model using Long Short-Term Memory (LSTM) neural networks. These neural networks can process sequential data and excel in capturing long-term dependencies, making them particularly suitable for weather forecasting tasks. The model uses historical weather data from NOAA’s National Centers for Environmental Information (NCEI) to predict critical weather parameters such as temperature, dew point, and wind speed. The project includes data preprocessing, model building, and optimization through hyperparameter tuning and performance evaluation using Mean Squared Error (MSE) and Mean Absolute Error (MAE). This study sheds light on the potential of Deep Learning techniques in weather forecasting, offering a useful tool for making accurate weather predictions and ultimately driving data-driven decision - making across industries."
+              description="This project aims to develop a robust weather forecasting model using Long Short-Term Memory (LSTM) neural networks. These neural networks can process sequential data and excel in capturing long-term dependencies, making them particularly suitable for weather forecasting tasks. The model uses historical weather data from NOAA's National Centers for Environmental Information (NCEI) to predict critical weather parameters such as temperature, dew point, and wind speed. The project includes data preprocessing, model building, and optimization through hyperparameter tuning and performance evaluation using Mean Squared Error (MSE) and Mean Absolute Error (MAE). This study sheds light on the potential of Deep Learning techniques in weather forecasting, offering a useful tool for making accurate weather predictions and ultimately driving data-driven decision - making across industries."
               tags={["Azure ML", "Databricks", "ETL", "Power BI", "Predictive Analytics"]}
               image="/images/weather.jpg"
               projectUrl="https://example.com/weather-analysis"
@@ -458,12 +476,12 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
               <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                05
+                06
               </span>
               Education & Certifications
             </h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 mb-8 items-stretch">
             <EducationCard
               degree="MS in Data Analytics Engineering"
               institution="Northeastern University, Boston"
@@ -477,6 +495,8 @@ export default function Home() {
                 "Database Management",
                 "NLP",
               ]}
+              logo="/images/NU.png"
+              cardClassName="h-full flex flex-col justify-center"
             />
 
             <EducationCard
@@ -490,14 +510,16 @@ export default function Home() {
                 "Power systems",
                 "Analog and Digital electronics",
               ]}
+              logo="/images/RU.png"
+              cardClassName="h-full flex flex-col justify-center"
             />
           </div>
 
           <h3 className="text-2xl font-bold mb-4 text-foreground">Certifications</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="bg-muted/50 hover:shadow-md transition-all">
-                <CardContent className="p-4">
+            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }} className="h-full">
+              <Card className="bg-muted/50 hover:shadow-md transition-all h-full min-h-[120px] flex flex-col justify-center">
+                <CardContent className="p-4 h-full flex flex-col justify-center">
                   <div className="text-center">
                     <Badge className="mb-2">IBM</Badge>
                     <h4 className="font-semibold text-foreground">ETL and Data Pipelines with Airflow and Kafka</h4>
@@ -506,9 +528,9 @@ export default function Home() {
               </Card>
             </motion.div>
 
-            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="bg-muted/50 hover:shadow-md transition-all">
-                <CardContent className="p-4">
+            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }} className="h-full">
+              <Card className="bg-muted/50 hover:shadow-md transition-all h-full min-h-[120px] flex flex-col justify-center">
+                <CardContent className="p-4 h-full flex flex-col justify-center">
                   <div className="text-center">
                     <Badge className="mb-2">Coursera</Badge>
                     <h4 className="font-semibold text-foreground">Machine Learning for Data Science</h4>
@@ -517,9 +539,9 @@ export default function Home() {
               </Card>
             </motion.div>
 
-            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="bg-muted/50 hover:shadow-md transition-all">
-                <CardContent className="p-4">
+            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }} className="h-full">
+              <Card className="bg-muted/50 hover:shadow-md transition-all h-full min-h-[120px] flex flex-col justify-center">
+                <CardContent className="p-4 h-full flex flex-col justify-center">
                   <div className="text-center">
                     <Badge className="mb-2">Microsoft</Badge>
                     <h4 className="font-semibold text-foreground">Microsoft Azure for Data Engineering</h4>
@@ -528,9 +550,9 @@ export default function Home() {
               </Card>
             </motion.div>
 
-            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }}>
-              <Card className="bg-muted/50 hover:shadow-md transition-all">
-                <CardContent className="p-4">
+            <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }} className="h-full">
+              <Card className="bg-muted/50 hover:shadow-md transition-all h-full min-h-[120px] flex flex-col justify-center">
+                <CardContent className="p-4 h-full flex flex-col justify-center">
                   <div className="text-center">
                     <Badge className="mb-2">Duke University</Badge>
                     <h4 className="font-semibold text-foreground">MLOps Tools: MLflow and Hugging Face</h4>
@@ -551,7 +573,7 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
               <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                06
+                07
               </span>
               Get In Touch
             </h2>
