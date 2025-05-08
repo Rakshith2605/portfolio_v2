@@ -121,7 +121,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground">
-              Data Engineer & <span className="text-primary">AI Specialist</span>
+              Generative AI Engineer & <span className="text-primary">Data Analyst</span>
             </h1>
             <div className="h-12 text-xl text-muted-foreground max-w-[600px]">
               <TypewriterEffect
