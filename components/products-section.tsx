@@ -12,7 +12,7 @@ const products = [
   {
     title: "PromptBud.com",
     description: "Advanced prompt engineering platform for optimizing and managing AI model interactions.",
-    link: "https://promptbud.com",
+    link: "https://promtbud.com/",
     tags: ["AI", "Prompt Engineering", "LLM", "Productivity"],
     video: "https://youtu.be/7o6WcZ58DH4"
   },

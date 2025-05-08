@@ -35,7 +35,7 @@ export default function Home() {
       setShowScrollTop(window.scrollY > 500)
 
       // Update active section based on scroll position
-      const sections = ["home", "about", "skills", "products", "experience", "projects", "education", "contact"]
+      const sections = ["home", "about", "skills", "products", "experience", "projects", "education"]
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -66,7 +66,7 @@ export default function Home() {
     { label: "Years Experience", value: "5+" },
     { label: "Projects Completed", value: "20+" },
     { label: "Data Processed", value: "1.5M+" },
-    { label: "Happy Clients", value: "10+" },
+    { label: "Happy Clients", value: "100+" },
   ]
 
   return (
@@ -78,7 +78,7 @@ export default function Home() {
             <span className="text-primary">R</span>akshith <span className="text-primary">D</span>harmappa
           </div>
           <nav className="hidden md:flex gap-6">
-            {["about", "skills", "products", "experience", "projects", "education", "contact"].map((section) => (
+            {["about", "products","skills", "experience", "projects", "education"].map((section) => (
               <Link
                 key={section}
                 href={`#${section}`}
@@ -186,9 +186,6 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                01
-              </span>
               About Me
             </h2>
           </motion.div>
@@ -292,24 +289,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section id="skills" className="py-12 scroll-mt-20">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                02
-              </span>
-              Technical Skills
-            </h2>
-          </motion.div>
-          <SkillsSection />
-        </section>
-
         {/* Products Section */}
         <section id="products" className="py-12 scroll-mt-20">
           <motion.div
@@ -319,13 +298,25 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                03
-              </span>
               Products
             </h2>
           </motion.div>
           <ProductsSection />
+        </section>
+
+        {/* Skills Section */}
+        <section id="skills" className="py-12 scroll-mt-20">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
+              Technical Skills
+            </h2>
+          </motion.div>
+          <SkillsSection />
         </section>
 
         {/* Experience Section */}
@@ -337,9 +328,6 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                04
-              </span>
               Professional Experience
             </h2>
           </motion.div>
@@ -395,9 +383,6 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                05
-              </span>
               Featured Projects
             </h2>
           </motion.div>
@@ -451,7 +436,7 @@ export default function Home() {
             <ProjectCard
               title="Weather Forecasting Model Using LSTMs"
               date="December 2025 - December 2025"
-              description="This project aims to develop a robust weather forecasting model using Long Short-Term Memory (LSTM) neural networks. These neural networks can process sequential data and excel in capturing long-term dependencies, making them particularly suitable for weather forecasting tasks. The model uses historical weather data from NOAA's National Centers for Environmental Information (NCEI) to predict critical weather parameters such as temperature, dew point, and wind speed. The project includes data preprocessing, model building, and optimization through hyperparameter tuning and performance evaluation using Mean Squared Error (MSE) and Mean Absolute Error (MAE). This study sheds light on the potential of Deep Learning techniques in weather forecasting, offering a useful tool for making accurate weather predictions and ultimately driving data-driven decision - making across industries."
+              description="This project develops an LSTM-based model using NOAA data to predict weather parameters like temperature and wind speed, emphasizing deep learning's effectiveness in forecasting through data preprocessing, model tuning, and evaluation using MSE and MAE metrics."
               tags={["Azure ML", "Databricks", "ETL", "Power BI", "Predictive Analytics"]}
               image="/images/weather.jpg"
               projectUrl="https://example.com/weather-analysis"
@@ -475,9 +460,6 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                06
-              </span>
               Education & Certifications
             </h2>
           </motion.div>
@@ -485,7 +467,7 @@ export default function Home() {
             <EducationCard
               degree="MS in Data Analytics Engineering"
               institution="Northeastern University, Boston"
-              period="September 2023 - May 2025"
+              period="2023 - 2025"
               gpa="3.7"
               courses={[
                 "Deep Learning and Neural Networks",
@@ -500,9 +482,9 @@ export default function Home() {
             />
 
             <EducationCard
-              degree="B'Tec in Electrical and Electronics Engineering"
+              degree="B.Tech in Electrical and Electronics Engineering"
               institution="REVA University, Bengaluru"
-              period="August 2018 - May 2022"
+              period="2018 - 2022"
               gpa="3.69"
               courses={[
                 "Microcontrollers",
@@ -572,9 +554,6 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-foreground">
-              <span className="bg-primary text-primary-foreground w-8 h-8 inline-flex items-center justify-center rounded-full mr-2 text-sm">
-                07
-              </span>
               Get In Touch
             </h2>
           </motion.div>
