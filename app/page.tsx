@@ -31,27 +31,31 @@ export default function Home() {
   // Handle scroll events
   useEffect(() => {
     const handleScroll = () => {
-      // Show/hide scroll to top button
-      setShowScrollTop(window.scrollY > 500)
-
-      // Update active section based on scroll position
-      const sections = ["home", "about", "skills", "products", "experience", "projects", "education"]
+      const sections = ["about", "products", "skills", "experience", "projects", "education"];
+      const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
-        const element = document.getElementById(section)
+        const element = document.getElementById(section);
         if (element) {
-          const rect = element.getBoundingClientRect()
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section)
-            break
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+            break;
           }
         }
       }
+    };
+
+    // Check if we're on the blogs page
+    if (window.location.pathname === "/blogs") {
+      setActiveSection("blogs");
+    } else {
+      window.addEventListener("scroll", handleScroll);
+      handleScroll(); // Initial check
     }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Scroll to top function
   const scrollToTop = () => {
@@ -78,17 +82,17 @@ export default function Home() {
             <span className="text-primary">R</span>akshith <span className="text-primary">D</span>harmappa
           </div>
           <nav className="hidden md:flex gap-6">
-            {["about", "products","skills", "experience", "projects", "education"].map((section) => (
+            {["about", "products", "skills", "experience", "projects", "education", "blogs"].map((section) => (
               <Link
                 key={section}
-                href={`#${section}`}
+                href={section === "blogs" ? "/blogs" : `#${section}`}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary nav-link",
                   activeSection === section ? "text-primary" : "text-foreground",
                 )}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
-                {activeSection === section && (
+                {activeSection === section && section !== "blogs" && (
                   <motion.div layoutId="activeSection" className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary" />
                 )}
               </Link>
